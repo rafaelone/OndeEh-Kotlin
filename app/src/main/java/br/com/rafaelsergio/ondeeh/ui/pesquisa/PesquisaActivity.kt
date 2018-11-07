@@ -21,7 +21,7 @@ class PesquisaActivity :BaseActivity<PesquisaPresenter>(), PesquisaView {
     }
 
     override fun showError(error: String) {
-
+        Toast.makeText(this, "Cep inválido", Toast.LENGTH_SHORT).show()
     }
 
     override fun showLoading() {
